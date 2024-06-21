@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Thymeleaf Demo</title>
+   
+</head>
+<body> 
+    <h1>Student Confirmation</h1>
+The student is confirmed <span th:text="${student.firstName}+' '+${student.lastName}"></span><br><br>
+<span><h3>Country</h3> <span th:text="${student.Country}"></span></span>
+<span><h3>Favourite Programming Language</h3> <span th:text="${student.language}"></span></span><br><br>
+<span><h3>Favourite Operating Systems</h3> <ul><li th:each ="tempOs : ${student.operatingsystems}" th:text="${tempOs}"></li></ul></span>
+</body>
+
+</html>

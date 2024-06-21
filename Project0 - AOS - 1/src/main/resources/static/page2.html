@@ -1,0 +1,219 @@
+<aside class="profile-card">
+    <header>
+        <style style="text-align: center;">
+            @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+            }
+
+           
+            body {
+              animation: slideInFromLeft 0.5s;
+              background-image: url("bck.jpg");
+              background-size: cover;
+            }
+            ul {
+                list-style: none;
+            }
+            @keyframes slideInFromLeft {
+                0% {
+                    transform: translateX(-100%);
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }
+            .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            }
+            a,.hobbies{
+                position: center;
+                display: inline-block;
+                padding: 25px 30px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                color:aliceblue;
+                font-size: 1.2rem;
+                font-weight: bold;
+                transition: 0.5sec;
+                overflow: hidden;
+            }
+            a:hover{
+                background-color:aliceblue;
+                color: #050801;
+                box-shadow: 0 0 5px #03e9f4,
+                            0 0 25px #03e9f4,
+                            0 0 50px #03e9f4,
+                            0 0 200px #03e9f4;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
+            }
+            .hobbies:hover , .center:hover{
+                background-color:aliceblue;
+                color: #050801;
+                box-shadow: 0 0 5px aliceblue,
+                            0 0 25px aliceblue,
+                            0 0 50px aliceblue,
+                            0 0 200px aliceblue;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
+            }
+            a:first-child{
+                filter: hue-rotate(0deg);
+            }
+            a span{
+                position: absolute;
+                display: block;
+            }
+            @keyframes animate1 {
+                0% {
+                    left:-100%;
+                }
+                100%{
+                    left:100%;
+                }
+            }
+            a span:nth-child(1){
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(90deg,transparent,#03e9f4);
+                animation: animate1 1s infinite;
+            }
+            a span:nth-child(2){
+                top: -100%;
+                right: 0;
+                width: 1px;
+                height: 100%;
+                background: linear-gradient(180deg,transparent,#03e9f4);
+                animation: animate2 1s infinite;
+                animation-delay: 0.25s;
+            }
+            @keyframes animate2{
+                0% {
+                    top:-100%;
+                }
+                100% {
+                    top:100%;
+                }
+            }
+            a span:nth-child(3){
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(270deg,transparent,#03e9f4);
+                animation: animate3 1s infinite;
+                animation-delay: 0.5s;
+            }
+            @keyframes animate3{
+                0% {
+                    right:-100%;
+                }
+                100% {
+                    right:100%;
+                }
+            }
+            a span:nth-child(4){
+                bottom: -100%;
+                left: 0;
+                width: 1px;
+                height: 100%;
+                background: linear-gradient(360deg,transparent,#03e9f4);
+                animation: animate4 1s infinite;
+                animation-delay: 0.75s;
+            }
+            @keyframes animate4{
+                0% {
+                    bottom:-100%;
+                }
+                100% {
+                    bottom:100%;
+                }
+            }
+
+            </style>
+                <!-- here’s the avatar -->
+        <div class="firstline">
+            <a id="myButton" href="index.html" style="text-decoration: none; align-items: flex-start;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Back
+            </a> 
+            <img src="profile.jpg" class="center" style="width:100px;height:100px; margin-top: 0%;">
+        </div>
+       
+      
+  
+        <!-- the username -->
+        <h1 style="color: aliceblue; text-align: center;">
+                Vinai Tummala
+              </h1>
+    <body>
+    <div id="data" >
+
+  
+    </header>
+</div>
+    <!-- bit of a bio; who are you? -->
+  
+      <p style="text-align: center;">
+        <ul id="data1" style="color: aliceblue; text-align: center; display: list-item;">
+            <li style="text-align: center; display: inline-flex;">
+                <a id="myButton" href="https://www.tamucc.edu/" style="text-decoration: none; align-items: flex-start;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                Masters - Computer Science, Texas A&M University - Corpus Christi</li>
+                </a>
+          </ul> 
+          </p>
+       
+          <ul id="data1" style="color: aliceblue; text-align: center; display:ruby-text;">
+            <li class="hobbies" style="text-align:initial; margin-right: 0%; ">
+                    Hobbies - 
+                
+            
+            </li>
+            <li style="text-align: center; ">
+                
+                <a id="myButton" href="https://leetcode.com/" style="text-decoration: none; ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Coding
+                </a>
+            
+            </li>
+            <li style="text-align: center; margin-left: 4%; text-decoration: solid; ">
+                <a id="myButton" href="https://netflix.com/" style="text-decoration: none; ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Watching Movies
+                </a>
+            
+            </li>
+            <li style="text-align: center; margin-left: 4%;"><a id="myButton" href="https://www.goodreads.com/" style="text-decoration: none;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Reading Books
+            </a></li>
+          </ul> 
+        </body>
+  </aside>

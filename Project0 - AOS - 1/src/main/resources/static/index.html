@@ -1,0 +1,219 @@
+<aside class="profile-card">
+    <head><title>Index</title></head>
+    <header>
+        <style style="text-align: center;">
+            @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+            }
+            @keyframes close {
+            0% { opacity: 1 }
+            100% { opacity: 0 }
+            }
+            body {
+              animation: slideInFromLeft 0.5s;    
+              background-image: url("bck.jpg");
+              background-size: cover;
+            }
+            ul {
+                list-style-type: none;
+            }
+            .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            }
+            .button1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 10vh;
+                background-color: black;
+            }
+            .button2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 10vh;
+                background-color: black;
+            }
+            a{
+                position: center;
+                display: inline-block;
+                padding: 25px 30px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                color:aliceblue;
+                font-size: 1.2rem;
+                font-weight: bold;
+                transition: 0.5sec;
+                overflow: hidden;
+            }
+            .note {
+                display: inline-block;
+                padding: 25px 30px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                color:aliceblue;
+                font-size: 1.0rem;
+                font-weight: bold;
+                transition: 0.5sec;
+                margin-left: 13%;
+            }
+            h1{
+                display: inline-block;
+                padding: 25px 30px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                color:aliceblue;
+                font-size: 1.0rem;
+                font-weight: bold;
+                transition: 0.5sec;
+                margin-left: 41%;
+            }
+            a:hover{
+                background-color:aliceblue;
+                color: #050801;
+                box-shadow: 0 0 5px #03e9f4,
+                            0 0 25px #03e9f4,
+                            0 0 50px #03e9f4,
+                            0 0 200px #03e9f4;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
+            }
+            
+            a:first-child{
+                filter: hue-rotate(0deg);
+            }
+            a span{
+                position: absolute;
+                display: block;
+            }
+            @keyframes animate1 {
+                0% {
+                    left:-100%;
+                }
+                100%{
+                    left:100%;
+                }
+            }
+            a span:nth-child(1){
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(90deg,transparent,#03e9f4);
+                animation: animate1 1s infinite;
+            }
+            
+            a span:nth-child(2){
+                top: -100%;
+                right: 0;
+                width: 1px;
+                height: 100%;
+                background: linear-gradient(180deg,transparent,#03e9f4);
+                animation: animate2 1s infinite;
+                animation-delay: 0.25s;
+            }
+            @keyframes animate2{
+                0% {
+                    top:-100%;
+                }
+                100% {
+                    top:100%;
+                }
+            }
+            a span:nth-child(3){
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(270deg,transparent,#03e9f4);
+                animation: animate3 1s infinite;
+                animation-delay: 0.5s;
+            }
+            @keyframes animate3{
+                0% {
+                    right:-100%;
+                }
+                100% {
+                    right:100%;
+                }
+            }
+            .center:hover{
+                background-color:aliceblue;
+                color: #050801;
+                box-shadow: 0 0 5px aliceblue,
+                            0 0 25px aliceblue,
+                            0 0 50px aliceblue,
+                            0 0 200px aliceblue;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
+            }
+            a span:nth-child(4){
+                bottom: -100%;
+                left: 0;
+                width: 1px;
+                height: 100%;
+                background: linear-gradient(360deg,transparent,#03e9f4);
+                animation: animate4 1s infinite;
+                animation-delay: 0.75s;
+            }
+            @keyframes animate4{
+                0% {
+                    bottom:-100%;
+                }
+                100% {
+                    bottom:100%;
+                }
+            }
+            
+            </style>
+    <body>
+        <img src="profile.jpg" class="center" style="width:100px;height:100px; margin-top: 5%;">
+      
+  
+        <!-- the username -->
+        <h1 style="color: aliceblue; text-align: center; margin-top: 0%;">
+                Vinai Tummala
+              </h1>
+              <div class="note" style="margin-top: -2%;">
+                Note - All the shining buttons in this website are clickable links! <p style="display: inline-block; font-size:18px;">&#128521;</p>
+            </div>
+            
+    <div style="align-items: center; margin-top: -2%;" class="profile-bio">
+  
+        <p style="text-align: center;">
+          <ul style="color: antiquewhite; text-align: center; display: list-item;">
+              <li style="display:inline-block">
+           <div class="button1"> <a id="myButton" href="page2.html" style="text-decoration: none;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Get Personal Info
+            </a> 
+           </div>
+            </li>
+              <li style="display: inline-block;">
+                <div class="button2">
+                <a href="http://localhost:8080/aosproj/students" style="text-decoration: none;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Fetch from database
+                </a>
+            </div>
+            </li>
+            </ul> 
+        </p>
+    
+      </div>
+        </body>
+  </aside>
