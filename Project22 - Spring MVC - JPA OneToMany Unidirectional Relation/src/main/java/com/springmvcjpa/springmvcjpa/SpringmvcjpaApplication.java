@@ -22,11 +22,12 @@ public class SpringmvcjpaApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(AppDao appDao){
 		return runneer->{
-			deleteCourseAndReviews(appDao);
+			//deleteCourseAndReviews(appDao);
 			//retriveCourseAndReviews(appDao);
 			//createCourseAndReviews(appDao);
 		};
 	}
+	@SuppressWarnings("unused")
 	private void deleteCourseAndReviews(AppDao appDao) {
 		int theId=12;
 		appDao.deleteCourse(theId);
