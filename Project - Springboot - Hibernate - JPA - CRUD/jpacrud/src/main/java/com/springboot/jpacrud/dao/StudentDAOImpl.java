@@ -2,7 +2,7 @@ package com.springboot.jpacrud.dao;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Repository;
 
 import com.springboot.jpacrud.entity.Student;
@@ -17,7 +17,7 @@ public class StudentDAOImpl implements StudentDAO {
     //define field for entity manager
     private EntityManager entityManager;
     //inject entity manager using constructor injection
-    @Autowired
+  
     public StudentDAOImpl(EntityManager entityManager){
         this.entityManager = entityManager;
     }

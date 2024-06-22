@@ -30,14 +30,15 @@ public class JpacrudApplication {
 				//deleteAllStudents(studentDAO);
 			};
 		}
+	@SuppressWarnings("unused")
 	private void deleteAllStudents(StudentDAO studentDAO) {
-		// TODO Auto-generated method stub
 		studentDAO.deleteAll();
 	}
 	private void deleteStudent(StudentDAO studentDAO) {
 		int studentId=7;
 		studentDAO.delete(studentId);
 	}
+	@SuppressWarnings("unused")
 	private void updateStudentFirstName(StudentDAO studentDAO) {
 		int studentId = 14;
 		Student myStudent = studentDAO.findById(studentId);
@@ -46,6 +47,7 @@ public class JpacrudApplication {
 		studentDAO.update(myStudent);
 
 	}
+	@SuppressWarnings("unused")
 	private void queryForStudentsByLastName(StudentDAO studentDAO) {
 		List<Student> students = studentDAO.findByLastName("Bumra");
 		for(Student tempStudent: students){
@@ -55,12 +57,14 @@ public class JpacrudApplication {
 			System.out.println(tempStudent.getEmail());
 		}
 	}
+	@SuppressWarnings("unused")
 	private void queryForStudents(StudentDAO studentDAO) {
 		List<Student> students = studentDAO.findAll();
 		for(Student tempStudent:students){
 			System.out.println(tempStudent.getId()+" "+tempStudent.getFirstName()+" "+tempStudent.getLastName());
 		}
 	}
+	@SuppressWarnings("unused")
 	private void readStudent(StudentDAO studentDAO) {
 		Student tempStudent4 = new Student("Sachin","Tendulkar","sachin10@gmail.com");
 		studentDAO.save(tempStudent4);
@@ -71,6 +75,7 @@ public class JpacrudApplication {
 		System.out.println(myStudent.getFirstName());
 		System.out.println(myStudent.getLastName());
 	}
+	@SuppressWarnings("unused")
 	private void creatsMultipleStudents(StudentDAO studentDAO) {
 		Student tempStudent1 = new Student("Dhoni","Mahendra","dhone7@gmail.com");
 		Student tempStudent2 = new Student("Rohit","sharma","rohitsharma45@gmail.com");
@@ -79,6 +84,7 @@ public class JpacrudApplication {
 		studentDAO.save(tempStudent2); // Save the student 
 		studentDAO.save(tempStudent3); // Save the student 
 	}
+	@SuppressWarnings("unused")
 	private void createStudent(StudentDAO studentDAO) {
 		//create the student Object
 
