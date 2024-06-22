@@ -17,6 +17,7 @@ public class CricketCoach implements Coach {
     public String getDailyWorkout() {
         return "Practice bowling for 15 minutes.";
     }
+    //bean lifecycle methods
     @PostConstruct
     public void initialisation(){
         System.out.println("Initialising the Cricket application");
