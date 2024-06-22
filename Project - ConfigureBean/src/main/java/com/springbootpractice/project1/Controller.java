@@ -16,7 +16,7 @@ public class Controller {
 
     public Controller() {
     }
-
+    // No Need to autowire since the controller bean is initialised in the sportconfig
     public Controller(@Qualifier("aquatic") Coach coach, @Qualifier("aquatic") Coach anotherCoach){
         this.coach=coach;
         this.anotherCoach=anotherCoach;
