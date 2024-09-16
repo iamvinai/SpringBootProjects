@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.springboot.jpacrud.entity.Student;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.Query;
 import jakarta.persistence.TypedQuery;
 import jakarta.transaction.Transactional;
 
@@ -64,9 +65,8 @@ public class StudentDAOImpl implements StudentDAO {
     @Transactional
     public int deleteAll() {
         
-        TypedQuery<Student> theTypedQuery = entityManager.createQuery("DELETE FROM Student",Student.class);
-        int deletedRows = theTypedQuery.executeUpdate();
-        return deletedRows;
+        Query query = entityManager.createQuery("DELETE FROM Student");
+        return query.executeUpdate();
     }
     
 
